@@ -317,7 +317,7 @@ class BotFrontend:
             nonlocal prog_msg, cnt
             remaining_msg_cnt = msg_id - min_id
 
-            if cnt % 100 == 0:
+            if cnt % 1000 == 0:
                 prog_text = f'{chat_html}: 还需下载大约 {remaining_msg_cnt} 条消息'
                 if prog_msg is not None:
                     await prog_msg.edit(prog_text, parse_mode='html')
